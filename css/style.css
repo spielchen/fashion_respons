@@ -625,7 +625,7 @@ a:hover {
   transition: 0.5s;
 }
 .menu_btn span::before {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 .menu_btn span::after {
   transform: translateY(5px);
