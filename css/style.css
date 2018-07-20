@@ -631,14 +631,13 @@ a:hover {
   transform: translateY(5px);
 }
 .menu_btn__active span::before {
-  transform: rotate(-35deg);
-  transform-origin: left bottom;
-  width: 10px;
+  transform: rotate(-45deg);
+}
+.menu_btn__active span{
+  height: 0;
 }
 .menu_btn__active span::after {
-  transform: rotate(35deg);
-  transform-origin: left top;
-  width: 10px;
+  transform: rotate(45deg);
 }
 .menu-block {
   transform: translateY(7%);
