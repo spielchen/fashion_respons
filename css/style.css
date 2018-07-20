@@ -705,6 +705,42 @@ a:hover {
     transform: translate(-50%, -180%);
   }
 }
+@media (min-width: 321px) and (max-width: 768px) {
+  .header {
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 68rem;
+  }
+  .header-main {
+    align-items: flex-start;
+  }
+  .header_menu {
+    display: none;
+  }
+  .header_logo {
+    display: block;
+  }
+  .header_pay {
+    display: none;
+  }
+  .new_goods__menu {
+    display: none;
+  }
+  .header_text {
+    padding-top: 1rem;
+    transform: translateY(-55%);
+  }
+  .header_text p {
+    font-size: 2rem;
+    writing-mode: vertical-rl;
+    transform: translateY(0%);
+  }
+  .buy {
+    padding: 2.2rem 2.2rem 2.2rem 2.2rem;
+    position: absolute;
+    transform: translate(-50%, -180%);
+  }
+}
 @media (min-width: 1440px) {
   .section {
     display: none;
