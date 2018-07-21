@@ -225,6 +225,9 @@ a:hover {
 .new_goods__menu ul li a:hover {
   text-decoration: underline;
 }
+.new_goods__menu2 {
+  display: none;
+}
 .new_goods__item {
   position: relative;
 }
@@ -302,6 +305,9 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.69);
   padding: 0.5rem 0 0.3rem 8.6rem;
 }
+.exlusive_woman__text img {
+  display: none;
+}
 .exlusive_woman__text h2 {
   font-size: 2.2rem;
   text-transform: uppercase;
@@ -338,6 +344,9 @@ a:hover {
   padding-bottom: 0.7rem;
   background-color: rgba(0, 0, 0, 0.34);
   color: #fff;
+}
+.exlusive_man__text img {
+  display: none;
 }
 .exlusive_man__text h2 {
   margin-bottom: 0;
@@ -625,16 +634,16 @@ a:hover {
   transition: 0.5s;
 }
 .menu_btn span::before {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
 }
 .menu_btn span::after {
   transform: translateY(5px);
 }
+.menu_btn__active span {
+  height: 0;
+}
 .menu_btn__active span::before {
   transform: rotate(-45deg);
-}
-.menu_btn__active span{
-  height: 0;
 }
 .menu_btn__active span::after {
   transform: rotate(45deg);
@@ -672,7 +681,7 @@ a:hover {
   .header {
     -webkit-background-size: cover;
     background-size: cover;
-    height: 68rem;
+    height: 75rem;
   }
   .header-main {
     align-items: flex-start;
@@ -687,7 +696,18 @@ a:hover {
     display: none;
   }
   .new_goods__menu {
-    display: none;
+    display: none ;
+  }
+  .new_goods__menu2 {
+    margin-top: 3rem;
+  }
+  .new_goods__menu2 ul {
+    list-style: none;
+    text-align: left;
+  }
+  .new_goods__menu2 ul li a {
+    font-size: 1.4rem;
+    color: #727272;
   }
   .header_text {
     padding-top: 1rem;
@@ -698,12 +718,101 @@ a:hover {
     writing-mode: vertical-rl;
     transform: translateY(0%);
   }
-  .buy {
+  #buy_first {
     padding: 2.2rem 2.2rem 2.2rem 2.2rem;
     position: absolute;
     transform: translate(-50%, -180%);
   }
+  .sale {
+    margin-top: 2rem;
+  }
+  .sale_collection {
+    display: none;
+  }
+  .sale_img {
+    display: none;
+  }
+  .sale_buy {
+    text-align: center;
+  }
+  .sale_buy img {
+    width: 100%;
+  }
+  .sale_item {
+    width: 95%;
+  }
+  .buy {
+    padding: 2.2rem 2.2rem 2.2rem 2.2rem;
+  }
+  .new_goods__text {
+    text-align: center;
+  }
+  .exlusive {
+    height: auto;
+  }
+  .exlusive__button,
+  .exlusive__button-o {
+    text-align: center;
+    margin-top: 3rem;
+    transform: translate(0, 0);
+  }
+  .exlusive_woman__img {
+    display: none;
+  }
+  .exlusive_woman__text {
+    padding: 0;
+    position: relative;
+    margin-top: 9rem;
+  }
+  .exlusive_woman__text h2 {
+    text-align: center;
+  }
+  .exlusive_woman__text img {
+    width: 100%;
+    position: absolute;
+    display: block;
+    transform: translateY(-80%);
+  }
+  .exlusive_man {
+    background-color: rgba(0, 0, 0, 0.34);
+    padding-right: 0;
+  }
+  .exlusive_man__text {
+    padding: 0;
+    padding-top: 24rem;
+    width: 100%;
+    position: relative;
+    background: transparent;
+  }
+  .exlusive_man__text img {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-100%);
+  }
+  .exlusive_man__img {
+    display: none;
+  }
+  .news_content__img {
+    position: relative;
+  }
+  .news_content__img img {
+    width: 100%;
+  }
+  .news_content__img a {
+    opacity: 1;
+  }
+  .partner {
+    display: none;
+  }
+  .plus_item {
+    margin-right: 0;
+    display: block;
+  }
+  .line_vertikal {
+    display: none;
+  }
 }
+/*-----------------MEDIA 320px-xs---------------*/
 @media (min-width: 321px) and (max-width: 768px) {
   .header {
     -webkit-background-size: cover;

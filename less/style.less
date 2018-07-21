@@ -253,6 +253,9 @@ a:hover{
 				}
 			}
 		}
+		&2{
+			display: none;
+		}
 	}
 	&__item{
 		position: relative;
@@ -332,6 +335,9 @@ a:hover{
 			position: relative;
 		}
 		&__text{
+			img{
+				display: none;
+			}
 			margin-top: 5.2rem;
 			background-color: rgba(255, 255, 255, 0.69);
 			padding: 0.5rem 0 0.3rem 8.6rem;
@@ -366,6 +372,9 @@ a:hover{
 		position: relative;
 		padding-left: 0;
 		&__text{
+			img{
+				display: none;
+			}
 			width: 90%;
 			padding-right: 9rem;
 			padding-top: 0.7rem;
@@ -697,15 +706,15 @@ a:hover{
 		}
 	}
 }
+.menu_btn__active span{
+	height: 0;
+}
+
 .menu_btn__active span::before{
-	transform: rotate(-35deg);
-	transform-origin: left bottom;
-	width: 10px;
+	transform: rotate(-45deg);
 }
 .menu_btn__active span::after{
-	transform: rotate(35deg);
-	transform-origin: left top;
-	width: 10px;
+	transform: rotate(45deg);
 }
 .menu-block{
 	transform: translateY(7%);
@@ -736,7 +745,18 @@ a:hover{
 		opacity: 1;
 		transform: scaleY(1) translateX(0);
 	}
+
+
+
+
+
+
 /*-----------------MEDIA---------------*/
+
+
+
+
+
 
 /*-----------------MEDIA 320px-xs---------------*/
 
@@ -744,7 +764,7 @@ a:hover{
 	.header{
 		-webkit-background-size: cover;
 		background-size: cover;
-		height: 68rem;
+		height: 75rem;
 		&-main{
 			align-items: flex-start;
 		}
@@ -759,7 +779,20 @@ a:hover{
 		}
 	}
 	.new_goods__menu{
-		display: none;
+		display: none ;
+		&2{
+			margin-top: 3rem;
+			ul{
+				list-style: none;
+				text-align: left;
+				li{
+					a{
+						 font-size: 1.4rem;
+  						color: #727272;
+					}
+				}
+			}
+		}
 	}
 	.header_text{
 		padding-top: 1rem;
@@ -770,13 +803,114 @@ a:hover{
 			transform: translateY(0%);
 		}
 	}
-	.buy{
+	#buy_first{
 		padding: 2.2rem 2.2rem 2.2rem 2.2rem;
 		position: absolute; 
 		transform: translate(-50%, -180%);
 	}
+	.sale{
+		margin-top: 2rem;
+		&_collection{
+			display: none;
+		}
+		&_img{
+			display: none;
+		}
+		&_buy{
+			text-align: center;
+			img{
+				width: 100%;
+			}
+		}
+		&_item{
+			width: 95%;
+		}
+	}
+	.buy{
+		padding: 2.2rem 2.2rem 2.2rem 2.2rem;
+	}
+	.new_goods{
+		&__text{
+			text-align: center;
+		}
+	}
+	.exlusive{
+		height: auto;
+		&__button, &__button-o{
+			text-align: center;
+			margin-top: 3rem;
+			transform: translate(0, 0);
+		}
+		&_woman{
+			&__img{
+				display: none;
+			}
+			&__text{
+				padding: 0;
+				position: relative;
+				margin-top: 9rem;
+				h2{
+					text-align: center;
+				}
+				img{
+					width: 100%;
+					position: absolute;
+					display: block;
+					transform: translateY(-80%);
+				}
+			}
+		}
+		&_man{
+			background-color: rgba(0, 0, 0, 0.34);
+			padding-right: 0;
+			&__text{
+				padding: 0;
+				padding-top: 24rem;
+				width: 100%;
+				position: relative;
+				background: transparent;
+				img{
+					position: absolute;
+					width: 100%;
+					transform: translateY(-100%);
+				}
+			}
+			&__img{
+				display: none;
+			}
+		}
+	}
+	.news{
+		&_content{
+			&__img{
+				position: relative;
+				img{
+					width: 100%;
+				}
+				a{
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.partner{
+		display: none;
+	}
+	.plus_item{
+		margin-right: 0;
+		display: block;
+	}
+	.line_vertikal{
+		display: none;
+	}
 }
- 
+
+
+
+
+
+ /*-----------------MEDIA 320px-xs---------------*/
+
 @media (min-width: 321px) and (max-width: 768px){
 	.header{
 		-webkit-background-size: cover;
