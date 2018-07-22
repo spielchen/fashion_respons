@@ -372,9 +372,6 @@ a:hover{
 		position: relative;
 		padding-left: 0;
 		&__text{
-			img{
-				display: none;
-			}
 			width: 90%;
 			padding-right: 9rem;
 			padding-top: 0.7rem;
@@ -404,6 +401,9 @@ a:hover{
 		&__img{
 			position: relative;
 			transform: translate(-13%, -15%);
+		}
+		img{
+			display: none;
 		}
 	}
 }
@@ -756,9 +756,155 @@ a:hover{
 
 
 
+@media (max-width: 768px){
+	.header{
+		-webkit-background-size: cover;
+		background-size: cover;
+		height: 75rem;
+		&-main{
+			align-items: flex-start;
+		}
+		&_menu{
+			display: none;
+		}
+		&_logo{
+			display: block;
+		}
+		&_pay{
+			display: none;
+		}
+	}
+	.new_goods__menu{
+		display: none ;
+		&2{
+			display: block;
+			margin-top: 3rem;
+			ul{
+				list-style: none;
+				text-align: left;
+				li{
+					a{
+						 font-size: 1.4rem;
+  						color: #727272;
+					}
+				}
+			}
+		}
+	}
+	.header_text{
+		padding-top: 1rem;
+		transform: translateY(23%);
+		p{
+			padding-bottom: 1rem;
+			font-size: 3rem;
+			transform: translateY(-30%);
+		}
+	}
+	#buy_first{
+		padding: 2.2rem 2.2rem 2.2rem 2.2rem;
+		position: absolute; 
+		transform: translate(-50%, 10%);
+	}
+	.sale{
+		margin-top: 2rem;
+		&_collection{
+			display: none;
+		}
+		&_img{
+			display: none;
+		}
+		&_buy{
+			text-align: center;
+			img{
+				width: 100%;
+			}
+		}
+		&_item{
+			width: 45%;
+		}
+	}
+	.buy{
+		padding: 2.2rem 2.2rem 2.2rem 2.2rem;
+	}
+	.new_goods{
+		&__text{
+			text-align: center;
+		}
+	}
+	.exlusive{
+		height: auto;
+		&__button, &__button-o{
+			text-align: center;
+			margin-top: 3rem;
+			transform: translate(0, 0);
+		}
+		&_woman{
+			&__img{
+				display: none;
+			}
+			&__text{
+				padding: 0;
+				position: relative;
+				margin-top: 9rem;
+				h2{
+					text-align: center;
+				}
+				img{
+					width: 100%;
+					position: absolute;
+					display: block;
+					transform: translateY(-80%);
+				}
+			}
+		}
+		&_man{
+			background-color: rgba(0, 0, 0, 0.34);
+			padding-right: 0;
+			&__text{
+				padding: 0;
+				padding-top: 24rem;
+				width: 100%;
+				position: relative;
+				background: transparent;
+				img{
+					position: absolute;
+					width: 100%;
+					transform: translateY(-100%);
+				}
+			}
+			&__img{
+				display: none;
+			}
+		}
+	}
+	.news{
+		&_content{
+			&__img{
+				position: relative;
+				img{
+					width: 100%;
+				}
+				a{
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.partner{
+		display: none;
+	}
+	.plus_item{
+		margin-right: 0;
+		display: block;
+	}
+	.line_vertikal{
+		display: none;
+	}
+}
 
 
 /*-----------------MEDIA 320px-xs---------------*/
+
 
 @media (max-width: 320px){
 	.header{
@@ -911,42 +1057,6 @@ a:hover{
 
  /*-----------------MEDIA 320px-xs---------------*/
 
-@media (min-width: 321px) and (max-width: 768px){
-	.header{
-		-webkit-background-size: cover;
-		background-size: cover;
-		height: 68rem;
-		&-main{
-			align-items: flex-start;
-		}
-		&_menu{
-			display: none;
-		}
-		&_logo{
-			display: block;
-		}
-		&_pay{
-			display: none;
-		}
-	}
-	.new_goods__menu{
-		display: none;
-	}
-	.header_text{
-		padding-top: 1rem;
-		transform: translateY(-55%);
-		p{
-			font-size: 2rem;
-			writing-mode: vertical-rl;
-			transform: translateY(0%);
-		}
-	}
-	.buy{
-		padding: 2.2rem 2.2rem 2.2rem 2.2rem;
-		position: absolute; 
-		transform: translate(-50%, -180%);
-	}
-}
 
 
 @media (min-width: 1440px){
